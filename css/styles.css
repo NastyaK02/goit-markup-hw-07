@@ -228,7 +228,7 @@ html {
 .social-list-menu {
   display: flex;
   justify-content: flex-start;
-  gap: 45px;
+  gap: 30px;
   margin-top: 48px;
 }
 
@@ -1076,7 +1076,8 @@ padding-top: 48px;
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero {
+  
+    .hero {
     background-image:  linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
