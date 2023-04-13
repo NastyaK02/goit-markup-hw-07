@@ -191,7 +191,7 @@ html {
   height: 8px;
   fill: var(--footer-background-color);
 }
-.mobile-item {
+.mobile-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
@@ -227,7 +227,7 @@ html {
 
 .social-list-menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 45px;
   margin-top: 48px;
 }
@@ -743,7 +743,10 @@ padding-top: 48px;
 }
 
 .modal {
-  min-width: 392px;
+
+  position: absolute;
+  width: 100%;
+  max-width: 392px;
   min-height: 586px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1237,6 +1240,8 @@ padding-top: 48px;
 /* Hero */
 
 .hero {
+
+  padding: 188px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
